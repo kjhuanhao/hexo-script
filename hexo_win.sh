@@ -49,13 +49,8 @@ else
 fi
 }
 
-if [ "$1" == "hexo_install" ]; then
 cnpm_install
 hexo_install
 init
 check_blog
-else 
-	echo "\033[31mPlease check your code!\033[0m"
-fi
-
 

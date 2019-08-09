@@ -6,17 +6,17 @@
 
 ![](https://cdn.jsdelivr.net/gh/huanhaokj/cdn/img/hexoscript.png)
 
-![](https://img.shields.io/badge/version-v1.0-blue)![](https://img.shields.io/github/size/kjhuanhao/hexo-script/install.sh)![](https://img.shields.io/github/downloads/kjhuanhao/hexo-script/total)
+![](https://img.shields.io/badge/version-v1.1-blue)![](https://img.shields.io/github/size/kjhuanhao/hexo-script/install.sh)
 
 中文文档/English documents
 
-* 国内镜像：https://gitee.com/huanhaokj/hexo-script
-
-* 国外镜像：https://github.com/kjhuanhao/hexo-script
+> 国内镜像：https://gitee.com/huanhaokj/hexo-script
+>
+> 国外镜像：https://github.com/kjhuanhao/hexo-script
 
 ## 脚本介绍
 
-【hexo-script】是一个hexo博客的自动安装脚本
+【hexo-script】是一个hexo博客的自动安装脚本,目前只支持windows系统，您可以使用本脚本进行可以进行检测node环境、git环境、安装hexo博客、一键上传到github或coding、一键生成ssh秘钥等操作。
 
 ### 没有使用【hexo-script】脚本安装hexo博客的过程
 
@@ -33,7 +33,7 @@
 
 ```shell
 $ curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
-$ ./install.sh hexo_install_windows
+$ source ./install.sh hexo_win
 ```
 
 ***
@@ -52,15 +52,25 @@ $ ./install.sh hexo_install_windows
 
 ***
 
-### 使用说明
+## 使用说明
 
-本脚本暂时未带有安装nodejs和安装git的功能，您需要先安装nodejs和git工具才能使用本脚本
+本脚本暂时未带有安装nodejs和安装git的功能，您需要先安装nodejs和git工具才能使用本脚本，建议安装nodejs完成后使用本脚本检测nodejs环境是否正确。
 
-使用本脚本时，所有的指令请在git bash中操作，否则会出现错误
+使用本脚本时，所有的指令请在git bash中操作，否则会出现错误，可以使用`Ctrl+Insert`粘贴命令
 
-#### 命令说明
+建议纯小白的用户先看完整版的说明文档。
 
-`必须：`在运行所有命令之前您需要执行下面这条命令来下载【hexo-script】脚本
+如果你有任何的使用问题或建议可以到[issues](https://github.com/kjhuanhao/hexo-script/issues/ )提出
+
+### 语言说明
+
+> 本脚本暂时是全英文版，因为在多次地测试中，经常出现中文乱码，所以采用全英文，如果有觉得看不懂的地方均可以复制下来，然后使用翻译软件查看错误或提示信息！
+
+***
+
+### 命令说明
+
+`注意：`在运行所有命令之前您需要执行下面这条命令来下载【hexo-script】脚本
 
 ```
 curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
@@ -83,13 +93,19 @@ curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 * 一键安装hexo博客
 
 ```
-./install.sh hexo_install_windows
+source ./install.sh hexo_win
 ```
 
 * 下载一键上传脚本
 
 ```
-./install.sh Downland_Upload_script
+./install.sh downland_deploy
+```
+
+* 使用一键上传脚本
+
+```
+./up.sh
 ```
 
 * 一键生成git秘钥
@@ -104,15 +120,27 @@ curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 ./install.sh help
 ```
 
+* 查看当前和最新版本
+
+```
+./install.sh version
+```
+
+* 升级脚本
+
+```
+./install.sh update
+```
+
 ***
 
-### 开源与转发说明
+## 开源与转发说明
 
-国外完整包下载：https://github.com/kjhuanhao/hexo-script/archive/master.zip
+> 国外完整包下载：https://github.com/kjhuanhao/hexo-script/archive/master.zip
 
-国内完整包下载：https://gitee.com/huanhaokj/hexo-script/repository/archive/master
+> 国内完整包下载：https://gitee.com/huanhaokj/hexo-script/repository/archive/master
 
-请尊重作者的辛苦付出，开源和转发时请带上作者：huanhao的名称和[源仓库](https://github.com/kjhuanhao/hexo-script)地址，建议先fork谢谢！
+请尊重作者的辛苦付出，开源和转发时请带上作者：huanhao的名称和[源仓库](https://github.com/kjhuanhao/hexo-script)地址，建议先Fork谢谢！
 
 **如何开源合并？**
 
@@ -122,11 +150,9 @@ curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 
 ***
 
-### 其他概要
+## 其他概要
 
 以上只是部分的功能或代码展示，具体的使用文档您可以查看：
-
-
 
 ### 捐赠/恰饭QWQ
 
