@@ -5,14 +5,16 @@
 INSTALL_NAME=$1
 INSTALL_VERSION=$2
 #当前win版本
-script_version="1.1"
-Updatin=https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/install.sh
-test_v=https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/version_win
+script_version="1.2"
+#升级
+Updatin=https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
+#最新版本
+test_v=https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/version_win
 #测试nodejs环境
 function test_node()
 {
 	if [[ $2 == "" ]]; then
-	curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/${INSTALL_NAME}.sh | sh -s test_node.sh
+	curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@${script_version}/${INSTALL_NAME}.sh | sh -s test_node.sh
 	
 else
 	curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@${INSTALL_VERSION}/${INSTALL_NAME}.sh | sh -s test_node.sh
@@ -23,7 +25,7 @@ function test_git()
 {
 
 	if [[ $2 == "" ]]; then
-	curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/${INSTALL_NAME}.sh | sh -s test_git.sh
+	curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@${script_version}/${INSTALL_NAME}.sh | sh -s test_git.sh
 else
 	curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@${INSTALL_VERSION}/${INSTALL_NAME}.sh | sh -s test_git.sh
 
@@ -33,7 +35,7 @@ else
 function hexo_win()
 {
 	if [[ $2 == "" ]]; then
-	curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/${INSTALL_NAME}.sh && source ./hexo_win.sh
+	curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@${script_version}/${INSTALL_NAME}.sh | sh -s hexo_win.sh
 else
 	curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@${INSTALL_VERSION}/${INSTALL_NAME}.sh | sh -s hexo_win.sh
 
@@ -43,7 +45,7 @@ else
 function downland_up()
 {
 	if [[ $2 == "" ]]; then
-	curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/up.sh
+	curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@${script_version}/up.sh
 	echo -e "\033[32mDeploy-script downloaded successfully\033[0m"
 	printf "\033[32mYou can run [ ./up.sh ] to deploy!\033[0m"
 else
@@ -55,7 +57,7 @@ else
 function git_ssh()
 {
 		if [[ $2 == "" ]]; then
-	curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/git.sh && source ./git.sh
+	curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@${script_version}/git.sh && source ./git.sh
 else
 	curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@${INSTALL_VERSION}/git.sh && source ./git.sh
 
@@ -65,7 +67,7 @@ function help()
 {
 	
 
-	echo "======================= Shell Scripts ======================="
+	echo "======================= hexo-script menu ======================="
 				printf "You can choose a scripts:\n"
 				printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 'test_node' '' 
 				printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 'test_git' '' 
@@ -78,16 +80,16 @@ function help()
 				printf "Be careful:\n"
 				printf "\033[36mYou can see our instructions\n> https://hexoscript.github.io/\n\033[0m"
 				printf "\n"
-				printf "Install the latest version by default without a version number\n"
+				printf "Please run source install.sh and the script you want to run, separated by spaces.\n"
 				printf "\n"
 				printf "For example:\n"
-				printf ">\033[36m ./install.sh test_node\n\033[0m"
-echo '-------------------------------------------------------------'
+				printf ">\033[36m[ source install.sh test_node ]\n\033[0m"
+echo '----------------------------------------------------------------'
 }
 #版本查看
 function version()
 {
-	for line in `curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/version_win`
+	for line in `curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/version_win`
 do
 printf "Your version is $script_version for windows \n >The latest version is $line"
 	
@@ -106,7 +108,7 @@ fi
 #下载最新版本的压缩包
 function update()
 {
-	curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/install_win.zip
+	curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install_win.zip
 	echo -e "\033[32mDownload successfully! Please unzip.\033[0m"
 }
 
