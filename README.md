@@ -2,7 +2,8 @@
 
 ![](https://cdn.jsdelivr.net/gh/huanhaokj/cdn/img/hexoscript.png)
 
-![](https://img.shields.io/badge/version-v1.1-blue)![](https://img.shields.io/github/size/kjhuanhao/hexo-script/install.sh)
+![](https://img.shields.io/badge/version-v1.1-blue)
+![](https://img.shields.io/github/size/kjhuanhao/hexo-script/install.sh)
 
 [中文文档](https://github.com/kjhuanhao/hexo-script/blob/master/README_CN.md)/English documents
 
