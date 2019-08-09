@@ -9,7 +9,7 @@ script_version="1.2"
 #升级
 Updatin=https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 #最新版本
-test_v=https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/version_win
+test_v=https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/version_win
 #测试nodejs环境
 function test_node()
 {
@@ -89,7 +89,7 @@ echo '----------------------------------------------------------------'
 #版本查看
 function version()
 {
-	for line in `curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/version_win`
+	for line in `curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/version_win`
 do
 printf "Your version is $script_version for windows \n >The latest version is $line"
 	
