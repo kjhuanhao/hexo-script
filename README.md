@@ -1,4 +1,4 @@
-# hexo自动安装脚本-windwos版
+# hexo自动安装脚本-windwos版说明文档
 
 ***
 
@@ -10,6 +10,12 @@
 
 中文文档/English documents
 
+## 相关网站
+
+> 【hexo-script】网站：https://hexoscript.github.io/
+>
+> 【hexo-script】使用文档：https://huanhaocode.gitbook.io/hexo-script/
+>
 > 国内镜像：https://gitee.com/huanhaokj/hexo-script
 >
 > 国外镜像：https://github.com/kjhuanhao/hexo-script
@@ -58,7 +64,7 @@ $ source ./install.sh hexo_win
 
 使用本脚本时，所有的指令请在git bash中操作，否则会出现错误，可以使用`Ctrl+Insert`粘贴命令
 
-建议纯小白的用户先看完整版的说明文档。
+建议纯小白的用户先看完整版的[使用文档](https://huanhaocode.gitbook.io/hexo-script/)。
 
 如果你有任何的使用问题或建议可以到[issues](https://github.com/kjhuanhao/hexo-script/issues/ )提出
 
@@ -152,7 +158,7 @@ source ./install.sh hexo_win
 
 ## 其他概要
 
-以上只是部分的功能或代码展示，具体的使用文档您可以查看：
+以上只是部分的功能或代码展示，具体的使用文档您可以查看：https://huanhaocode.gitbook.io/hexo-script/
 
 ### 捐赠/恰饭QWQ
 
