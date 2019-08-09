@@ -92,7 +92,7 @@ curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 
 * 一键安装hexo博客
 
-```
+```shell
 source ./install.sh hexo_win
 ```
 
