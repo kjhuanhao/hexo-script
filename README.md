@@ -87,7 +87,7 @@ source install.sh test_node
 
 * Git detection environment
 
-```
+```shell
 source install.sh test_git
 ```
 
