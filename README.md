@@ -34,7 +34,7 @@
 
 ```shell
 $ curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
-$ source ./install.sh hexo_win
+$ source install.sh hexo_win
 ```
 
 ***
@@ -73,7 +73,7 @@ The use of if you have any questions or Suggestions can put forward to the [issu
 
 `Note: `you need to execute this command to download the [hexo-script] script before running any commands.
 
-```
+```shell
 curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 ```
 
@@ -82,55 +82,55 @@ curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 * Detection of the node
 
 ```shell
-./install.sh test_node
+source install.sh test_node
 ```
 
 * Git detection environment
 
 ```
-./install.sh test_git
+source install.sh test_git
 ```
 
 * Install the hexo blog in one click
 
 ```shell
-source ./install.sh hexo_win
+source install.sh hexo_win
 ```
 
 * Download the one-click upload script
 
-```
-./install.sh downland_deploy
+```shell
+source install.sh downland_deploy
 ```
 
 * Upload scripts with one click
 
-```
-./up.sh
+```shell
+source up.sh
 ```
 
 * One key generates git secret key
 
-```
-./install.sh git_ssh
+```shell
+source install.sh git_ssh
 ```
 
 * See the help
 
-```
-./install.sh help
+```shell
+source install.sh help
 ```
 
 * View current and latest versions
 
-```
-./install.sh version
+```shell
+source install.sh version
 ```
 
 * The upgrade script
 
-```
-./install.sh update
+```shell
+source install.sh update
 ```
 
 ***

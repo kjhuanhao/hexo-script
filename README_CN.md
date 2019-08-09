@@ -37,7 +37,7 @@
 
 ```shell
 $ curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
-$ source ./install.sh hexo_win
+$ source install.sh hexo_win
 ```
 
 ***
@@ -76,7 +76,7 @@ $ source ./install.sh hexo_win
 
 `注意：`在运行所有命令之前您需要执行下面这条命令来下载【hexo-script】脚本
 
-```
+```shell
 curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 ```
 
@@ -85,55 +85,55 @@ curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 * 检测node
 
 ```shell
-./install.sh test_node
+source install.sh test_node
 ```
 
 * 检测git环境
 
-```
-./install.sh test_git
+```shell
+source install.sh test_git
 ```
 
 * 一键安装hexo博客
 
 ```shell
-source ./install.sh hexo_win
+source install.sh hexo_win
 ```
 
 * 下载一键上传脚本
 
-```
-./install.sh downland_deploy
+```shell
+source install.sh downland_deploy
 ```
 
 * 使用一键上传脚本
 
-```
-./up.sh
+```shell
+source up.sh
 ```
 
 * 一键生成git秘钥
 
-```
-./install.sh git_ssh
+```shell
+source install.sh git_ssh
 ```
 
 * 查看帮助
 
-```
-./install.sh help
+```shell
+source install.sh help
 ```
 
 * 查看当前和最新版本
 
-```
-./install.sh version
+```shell
+source install.sh version
 ```
 
 * 升级脚本
 
-```
-./install.sh update
+```shell
+source install.sh update
 ```
 
 ***
