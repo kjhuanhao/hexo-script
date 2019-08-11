@@ -5,7 +5,7 @@
 INSTALL_NAME=$1
 INSTALL_VERSION=$2
 #当前win版本
-script_version="1.2"
+script_version="1.3"
 #升级
 Updatin=https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 #最新版本
