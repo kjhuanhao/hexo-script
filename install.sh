@@ -89,7 +89,7 @@ echo '----------------------------------------------------------------'
 #版本查看
 function version()
 {
-	for line in `curl -s https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/version_win`
+	for line in `curl -s https://kjhuanhao.github.io/hexo-script/version_win.html`
 do
 printf "Your version is $script_version for windows \n >The latest version is $line"
 	
