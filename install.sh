@@ -6,10 +6,9 @@ INSTALL_NAME=$1
 INSTALL_VERSION=$2
 #当前win版本
 script_version="1.3"
-#升级
-Updatin=https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install.sh
 #最新版本
-test_v=https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@master/version_win
+test_v=`curl -s https://kjhuanhao.github.io/hexo-script/version_win.html`
+
 #测试nodejs环境
 function test_node()
 {
@@ -108,7 +107,7 @@ fi
 #下载最新版本的压缩包
 function update()
 {
-	curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script/install_win.zip
+	curl -O https://cdn.jsdelivr.net/gh/kjhuanhao/hexo-script@${test_v}/install.zip
 	echo -e "\033[32mDownload successfully! Please unzip.\033[0m"
 }
 
@@ -137,6 +136,7 @@ case $1 in
 	version
 		;;
 		update)
+	update
 		;;
 		*)
 		 ;;
