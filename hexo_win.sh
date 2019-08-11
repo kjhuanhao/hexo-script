@@ -41,6 +41,7 @@ else
 	echo -e "\033[32mSuccessful installation of blog\033[0m"&&cd hexoblog
 	printf "\n \033[32mInstalling blog...\033[0m"
 	cnpm install
+	cnpm install hexo-deployer-git --save
 	echo -e "Blog installation complete!"
 	echo -e "\033[32mPlease run hexo s to check it out!\033[0m" 
 else

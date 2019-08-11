@@ -100,7 +100,7 @@ source install.sh hexo_win
 * Download the one-click upload script
 
 ```shell
-source install.sh downland_deploy
+source install.sh deploy
 ```
 
 * Upload scripts with one click

@@ -103,7 +103,7 @@ source install.sh hexo_win
 * 下载一键上传脚本
 
 ```shell
-source install.sh downland_deploy
+source install.sh deploy
 ```
 
 * 使用一键上传脚本
