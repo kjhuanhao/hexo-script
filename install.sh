@@ -5,7 +5,7 @@
 INSTALL_NAME=$1
 INSTALL_VERSION=$2
 #当前win版本
-script_version="1.3"
+script_version="1.31"
 #最新版本
 test_v=`curl -s https://kjhuanhao.github.io/hexo-script/version_win.html`
 

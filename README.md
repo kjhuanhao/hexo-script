@@ -112,7 +112,7 @@ source up.sh
 * One key generates git secret key
 
 ```shell
-source install.sh git_ssh
+./install.sh git_ssh
 ```
 
 * See the help

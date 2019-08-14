@@ -115,7 +115,7 @@ source up.sh
 * 一键生成git秘钥
 
 ```shell
-source install.sh git_ssh
+./install.sh git_ssh
 ```
 
 * 查看帮助

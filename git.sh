@@ -11,17 +11,18 @@ case $i in
 if [[ -d $DIR ]]; then
 	echo -e "\033[31mYour key already exists\033[0m"
 	cat ~/.ssh/id_rsa.pub
-exit
+exit 
 else
 	echo -e "\033[32mFollow the instructions below\033[0m"&cd ~
 fi
 	read -p "Please input your email:" EMAIL
-ssh-keygen -t rsa -C "$EMAIL"
+ssh-keygen -t rsa -C ${EMAIL}
 git config --global user.email "$EMAIL"
 	read -p "Please input your name:" NAME
-git config --global user.name "$NAME"
-	echo "\033[32mSet up successfull\033[0m"
+git config --global user.name ${NAME}
+	echo -e "\033[32mSet up successfull!\033[1m"
 	echo "You need to add the key to the SSH keys"
+exit
 	 ;;
 	SSH)
 	cat ~/.ssh/id_rsa.pub
